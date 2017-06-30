@@ -1,9 +1,11 @@
 package com;
 
+import java.io.Serializable;
+
 /**
  * Created by frosales on 30/06/2017.
  */
-public class Person {
+public class Person implements Serializable {
     private String name;
     private Integer bornYear;
 
