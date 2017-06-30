@@ -16,9 +16,9 @@ public class MyVaadinApplication extends UI {
         setContent(layout);
         // Have some data
         Collection<Person> people = Lists.newArrayList(
-                new Person("Nicolaus Copernicus", 1543),
-                new Person("Galileo Galilei", 1564),
-                new Person("Johannes Kepler", 1571));
+                new Person("Fredwin Rosales", 1543),
+                new Person("Youseli Campos", 1564),
+                new Person("Jacob Abraham Rosales", 1571));
 
         // Have a container of some type to contain the data
         BeanItemContainer<Person> container =
@@ -27,6 +27,7 @@ public class MyVaadinApplication extends UI {
         // Create a grid bound to the container
         Grid grid = new Grid(container);
         grid.setColumnOrder("name", "bornYear");
+        grid.setSelectionMode(Grid.SelectionMode.MULTI);
         layout.addComponent(grid);
     }
 }
