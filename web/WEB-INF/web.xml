@@ -15,4 +15,16 @@
         <servlet-name>VaadinApplicationServlet</servlet-name>
         <url-pattern>/*</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>VaadinApplicationServlet2</servlet-name>
+        <servlet-class>com.vaadin.server.VaadinServlet</servlet-class>
+        <init-param>
+            <param-name>UI</param-name>
+            <param-value>com.CreatePerson</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>VaadinApplicationServlet2</servlet-name>
+        <url-pattern>/create/*</url-pattern>
+    </servlet-mapping>
 </web-app>
